@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - My eCommerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="profile-info">
+            <p>Username: <span id="profile-username"></span></p>
+            <p>Email: <span id="profile-email"></span></p>
+        </div>
+        <form id="edit-profile-form">
+            <label for="new-username">New Username:</label>
+            <input type="text" id="new-username" name="new-username">
+            <br>
+            <label for="new-email">New Email:</label>
+            <input type="email" id="new-email" name="new-email">
+            <br>
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
